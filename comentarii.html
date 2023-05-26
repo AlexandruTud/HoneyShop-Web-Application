@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///C:/Users/ALEXAN~1/AppData/Local/Temp/Nicepage/chrome/en/Page-1.html -->
+<html style="font-size: 16px;" lang="ro-RO" class="u-responsive-xl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" href="./Mai mult_files/logoooooo.png"/>
+    <title>Recenzii</title>
+    <link rel="stylesheet" href="./Page 1_files/nicepage.css" media="screen">
+<link rel="stylesheet" href="./Page 1_files/Page-1.css" media="screen">
+    <script class="u-script" type="text/javascript" src="./Page 1_files/jquery.js.download" defer=""></script>
+    <script class="u-script" type="text/javascript" src="./Page 1_files/nicepage.js.download" defer=""></script>
+    <meta name="generator" content="Nicepage 5.8.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="./Page 1_files/css">
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site1",
+		"logo": "../images/logoooooo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Page 1">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode" data-lang="en"><header class=" u-clearfix u-header u-section-row-container" id="sec-d346"><div class="u-section-rows">
+        <div class="u-align-center u-container-align-center u-custom-color-7 u-section-row" id="sec-f420">
+          <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <p class="navbar-top-text u-align-center u-text u-text-default u-text-1">Comandă acum:<span style="font-weight: 700;"> &nbsp;</span> 0740 123 155<span style="font-weight: 700;">
+                <span style="font-weight: 400;"></span>
+              </span>
+            </p>
+          </div>
+          
+          
+          
+          
+          
+        </div>
+        <div class="u-align-center u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-container-align-center-xl u-custom-color-6 u-section-row u-section-row-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="" id="sec-686b">
+          <div class="u-clearfix u-sheet u-sheet-2">
+            <a href="index.html" class="u-image u-logo u-image-1" data-image-width="1000" data-image-height="1000" title="LingurițaDeMiere">
+              <img src="./Page 1_files/logoooooo.png" class="u-logo-image u-logo-image-1">
+            </a>
+          </div>
+          
+          
+          
+          
+          
+        </div>
+      </div></header> 
+      
+      <div id="container">
+        <div id="title_container">
+          <h2 id="sub_header">Recenzii</h2>
+        </div>
+      
+        <div id="form_container">
+          <input placeholder="Nume" type="name" id="username" maxlength="25"/>
+          <textarea placeholder="Comentariu" type="text" id="say_something"></textarea>
+          <div class="tooltip">
+            ?
+            <span class="tooltip-text">Vă rugăm să aveți în vedere că limbajul licențios sau ofensator va fi eliminat.</span>
+          </div>
+
+          <div id="star_rating">
+            <span class="star" id="star_1" onclick="rate(1)">&#9733;</span>
+            <span class="star" id="star_2" onclick="rate(2)">&#9733;</span>
+            <span class="star" id="star_3" onclick="rate(3)">&#9733;</span>
+            <span class="star" id="star_4" onclick="rate(4)">&#9733;</span>
+            <span class="star" id="star_5" onclick="rate(5)">&#9733;</span>
+          </div>
+
+          <div id="alert_message"></div>
+          <div id="button_container" >
+            <button id="submit" onclick="save()">Postează</button>
+          </div>
+        </div>
+
+        <div id="output_container" class="comment_container"></div>
+        <div id="comment_count"></div>
+      </div>
+      
+    
+    <footer class="u-align-center u-clearfix u-custom-color-6 u-footer u-footer" id="sec-5d59"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1"> © 2023 LingurițaDeMiere. All rights reserved.</p>
+      </div></footer>
+    
+  
+<style>.u-disable-duration * {transition-duration: 0s !important;}</style></body>
+<style>
+
+   /* body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    } */
+    #container {
+        margin: 0 auto;
+    }
+    
+    #sub_header {
+      font-family: 'Lobster';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 48px;
+      
+    }
+
+    #say_something {
+      width: 100%;
+      padding: 10px;
+      min-height: 80px;
+      outline: none;
+      background: #f9f9f9;
+      border-radius: 0px 0px 5px 5px;
+      word-wrap: break-word; 
+    }
+
+    .comment .comment-date{
+      font-size: 12px;
+      color: #777;
+      margin-top: 5px;
+    } 
+
+    #container {
+      max-width: 600px;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .username {
+      font-weight: bold;   
+    }
+
+    #star_rating{
+        font-size: 30px;
+    }
+
+    .comment .star {
+      display: inline-block;
+      font-size: 18px;
+      color: #c4c2c2;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    .comment p {
+      margin: 0 0 0 0;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    #form_container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    #form_container input[type="name"],
+    #form_container input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: Source Sans Pro;
+    }
+
+    #form_container input[type="name"]:focus,
+    #form_container input[type="text"]:focus {
+      outline: none;
+    }
+    #star_rating {
+      margin-bottom: 10px;
+    }
+
+    #star_rating .star {
+      margin-right: 10px;
+    }
+
+    #submit {
+      padding: 10px;
+      background-color: orange;
+      color: #272727;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #submit:hover {
+      background-color: rgb(235, 152, 0);
+    }
+
+    .star {
+      cursor: pointer;
+      color: #ccc;
+    }
+
+    .star.rated {
+      color: orange; 
+    }
+
+    #alert_message {
+      padding-bottom: 10px;
+    }
+
+    #output_container {
+      height: 30em;
+      margin: 0 -1em 1em -1em;
+      padding: 1em;
+      background: #eef;
+      border-top: solid 1px #ddd;
+      border-bottom: solid 1px #ddd;
+      overflow-y: auto; 
+      overflow-x: hidden;
+    }
+    .comment {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #ffffff;
+      border: 1px solid #dadada;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .comment-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding-bottom: 5px;
+    }
+
+    .comment-rating {
+      display: flex;
+      align-items: center;
+    }
+
+    .comment-rating .star {
+      margin-right: 5px;
+    }
+
+    .comment-text {
+      margin-top: 10px;
+      word-break: break-word;
+    }
+
+    #comment_count {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: right;
+    } 
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      margin-left: 5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #888;
+      color: #fff;
+      font-size: 10px;
+      text-align: center;
+      line-height: 12px;
+      cursor: help;
+      margin-top: 8px;
+    }
+
+    .tooltip-text {
+      display: none;
+      position: absolute;
+      top: -30px;
+      left: 20px; 
+      padding: 5px;
+      background-color: #888;
+      color: #fff;
+      font-size: 12px;
+      border-radius: 3px;
+      white-space: normal;
+      overflow-wrap: break-word;
+      max-width: 300px; 
+    }
+
+    .tooltip:hover .tooltip-text {
+      display: block;
+    }
+
+  </style>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+  <script src="index.js"></script>
+  <script>
+    const tooltip = document.querySelector('.tooltip');
+    const input = document.getElementById('nrtel');
+
+    tooltip.addEventListener('mouseover', () => {
+      input.focus();
+      input.blur();
+      input.focus();
+    });
+
+    tooltip.addEventListener('mouseout', () => {
+      input.blur();
+    });
+  </script>
+  </html>

@@ -1,0 +1,40 @@
+
+body {
+    background-image: url('./top-view-frame-with-white-paper-flowers-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+  .informatii {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    
+  }
+  
+  .informatii h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Lobster';
+    font-weight: bold;
+  }
+  
+  .informatii p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .titlu {
+    padding-bottom: 50px;
+  }
+
+  .informatii .titlutitlu{
+    font-family: 'Lobster';
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 20px;
+  }

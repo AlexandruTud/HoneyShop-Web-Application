@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///C:/Users/ALEXAN~1/AppData/Local/Temp/Nicepage/chrome/en/Page-1.html -->
+<html style="font-size: 16px;" lang="ro-RO" class="u-responsive-xl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" href="./Mai mult_files/logoooooo.png"/>
+    <title>Mulțumim!</title>
+    <link rel="stylesheet" href="./Page 1_files/nicepage.css" media="screen">
+<link rel="stylesheet" href="./Page 1_files/Page-1.css" media="screen">
+    <script class="u-script" type="text/javascript" src="./Page 1_files/jquery.js.download" defer=""></script>
+    <script class="u-script" type="text/javascript" src="./Page 1_files/nicepage.js.download" defer=""></script>
+    <meta name="generator" content="Nicepage 5.8.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="./Page 1_files/css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/openai"></script>
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site1",
+		"logo": "../images/logoooooo.png"
+}</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	function generateImage() {
+            var apiKey = "nRJxxymT28O_ugEX6_oc3Kxyf4rVpJbP5i4Qd5opgrY";
+            var query = "honey";
+            var apiUrl = "https://api.unsplash.com/photos/random/?client_id=" + apiKey + "&query=" + query;
+
+            $.getJSON(apiUrl, function(data) {
+                var imageUrl = data.urls.regular;
+                var imageElement = document.getElementById("image");
+                imageElement.src = imageUrl;
+                imageElement.style.display = "block";
+            });
+        }
+
+        window.onload = generateImage;
+</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Page 1">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode" data-lang="en"><header class=" u-clearfix u-header u-section-row-container" id="sec-d346"><div class="u-section-rows">
+        <div class="u-align-center u-container-align-center u-custom-color-7 u-section-row" id="sec-f420">
+          <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <p class="navbar-top-text u-align-center u-text u-text-default u-text-1">Comandă acum:<span style="font-weight: 700;"> &nbsp;</span> 0740 123 155<span style="font-weight: 700;">
+                <span style="font-weight: 400;"></span>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="u-align-center u-clearfix u-container-align-center-lg u-container-align-center-md u-container-align-center-sm u-container-align-center-xl u-custom-color-6 u-section-row u-section-row-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="" id="sec-686b">
+          <div class="u-clearfix u-sheet u-sheet-2">
+            <a href="index.html" class="u-image u-logo u-image-1" data-image-width="1000" data-image-height="1000" title="LingurițaDeMiere">
+              <img src="./Page 1_files/logoooooo.png" class="u-logo-image u-logo-image-1">
+            </a>
+          </div>
+        </div>
+      </div></header> 
+      
+    <section class="main">
+      <header class="site-header" id="header">
+		<h1 class="site-header__title" data-lead-id="site-header-title">Comandă trimisă!</h1>
+	</header>
+
+	<div class="main-content">
+		<i class="fa fa-check main-content__checkmark" id="checkmark"></i>
+		<p class="main-content__body" data-lead-id="main-content-body">Comanda dumneavostră a fost înregistrată cu succes. Pentru confirmarea comenzii veți fi contactat telefonic în 24 - 48 de ore!</p>
+	</div>
+
+	<div class="order-container">
+		<div class="result-box">
+			<p>Nume: <span id="nameDisplay"></span></p>
+		</div>
+		<div class="result-box">
+			<p>Email: <span id="emailDisplay"></span></p>
+		</div>
+		<div class="result-box">
+			<p>Adresă: <span id="adresaDisplay"></span></p>
+		</div>
+		<div class="result-box">
+			<p>Număr telefon: <span id="nrtelDisplay"></span></p>
+		</div>
+		<div class="result-box">
+			<p>Floarea Soarelui: <span id="floareaSoareluiDisplay"></span> borcane</p>
+		</div>
+		<div class="result-box">
+			<p>Polifloră: <span id="polifloraDisplay"></span> borcane</p>
+		</div>
+	</div>
+	
+
+	<img id="image" alt="Imagine generată">
+
+
+	<div class="button-container">
+		<button class="redirect-button" onclick="window.location.href = 'index.html'">Înapoi pe site</button>
+		<button class="redirect-button" onclick="window.location.href = 'comentarii.html'">Lasa-ne un feedback</button>
+	</div>
+
+    </section>
+
+
+
+    <footer class="u-align-center u-clearfix u-custom-color-6 u-footer u-footer" id="sec-5d59"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1"> © 2023 LingurițaDeMiere. All rights reserved.</p>
+      </div>
+    </footer>
+    
+      <style>
+
+		
+html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .order-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+			padding: 3%;
+        }
+
+		.order-container2{
+			display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+			margin-bottom: 30px;
+			padding: 3%;
+		}
+
+		.site-header__title2 {
+            font-family: 'Lobster', cursive;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+		.button-container{
+			margin-bottom: 20px;
+		}
+
+        #image {
+            display: none;
+            width: 412px;
+            height: 412px;
+        }
+
+        .result-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            min-height: 50px;
+        }
+
+        .main {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .site-header {
+            text-align: center;
+        }
+
+        .site-header__title {
+            font-family: 'Lobster', cursive;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .main-content {
+            text-align: center;
+            margin-top: 20px;
+            width: 90%;
+        }
+
+        .main-content__checkmark {
+            font-size: 44px;
+            color: green;
+        }
+
+        .main-content__body {
+            margin-top: 10px;
+        }
+
+        .site-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .site-footer__fineprint {
+            font-size: 12px;
+        }
+
+        .redirect-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #473838;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .redirect-button:hover {
+            background-color: #2e2525;
+        }
+
+        #image-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+			margin-top: 30px;
+        }
+
+		.button {
+            padding: 12px 24px;
+            background-color: #473838;
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+
+
+        .button:hover {
+            background-color: #251e1e;
+        }
+		
+	</style>
+<style>.u-disable-duration * {transition-duration: 0s !important;}</style></body>
+
+<script>
+	 function displayFormData() {
+            const name = localStorage.getItem("name");
+            const email = localStorage.getItem("email");
+            const adresa = localStorage.getItem("adresa");
+            const nrtel = localStorage.getItem("nrtel");
+            const floarea_soarelui = localStorage.getItem("floarea-soarelui");
+            const poliflora = localStorage.getItem("poliflora");
+
+            document.getElementById("nameDisplay").innerHTML = name;
+            document.getElementById("emailDisplay").innerHTML = email;
+            document.getElementById("adresaDisplay").innerHTML = adresa;
+            document.getElementById("nrtelDisplay").innerHTML = nrtel;
+            document.getElementById("floareaSoareluiDisplay").innerHTML = floarea_soarelui;
+            document.getElementById("polifloraDisplay").innerHTML = poliflora;
+        }
+		window.addEventListener('load', function() {
+			displayFormData();
+		});
+
+	
+
+</script>
+</html>
+
+
+
